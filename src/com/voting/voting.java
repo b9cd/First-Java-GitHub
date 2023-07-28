@@ -1,4 +1,5 @@
 package com.voting;
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class voting {
@@ -14,10 +15,16 @@ public class voting {
         System.out.println("Your age: ");
         int age = ageIn.nextInt();
 
+        /*Asking for ID number*/
+        Scanner idNumIn = new Scanner(System.in);
+        System.out.println("Your national nuumber: ");
+        BigInteger idNum = idNumIn.nextBigInteger();
+
         /*The message*/
-        System.out.print("Hello," + name+ " you are " + age + " years old!!");
+        System.out.print("Hello," + name+ " you are " + age + " years old!!" + " And your national number is :" + idNum);
 
 
 
     }
+
 }
