@@ -8,7 +8,7 @@ public class voting {
         System.out.println("Your name: ");
         String name = nameIn.nextLine();
 
-        System.out.print(name);
+        System.out.print("Hello," + name);
 
 
 
